@@ -11,10 +11,7 @@ export class SearchBarComponent implements OnInit {
 
   ngOnInit() {
   }
-  onFocus(){ 
-      
-      $(".search-icon").addClass("si-rotate");
-    
+  onFocus(){     
 
   }
   
