@@ -9,10 +9,12 @@ import { AppRoutingModule, routingCompnents } from './app-routing/app-routing.mo
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
  import { SearchBarComponent } from './search-bar/search-bar.component';
+import { ApiService } from './services/api.service';
   
 @NgModule({
   imports:      [BrowserModule, RouterModule,FormsModule, AppRoutingModule],
   declarations: [ AppComponent, HelloComponent,  SearchBarComponent ,routingCompnents],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [ApiService]
 })
 export class AppModule { }
