@@ -5,6 +5,7 @@ body {
   background-size: cover;
 }
 .row {
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
