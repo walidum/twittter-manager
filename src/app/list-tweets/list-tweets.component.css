@@ -1,11 +1,6 @@
-body {
-  font-family: tahoma;
-  height: 100vh;
-  background-image: url(https://picsum.photos/g/3000/2000);
-  background-size: cover;
-}
-.row {
 
+.row {
+  padding-top: 2%;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -14,7 +9,7 @@ body {
 }
 
 .tweet {
-  margin: 2px;
+max-width: 300px; 
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
