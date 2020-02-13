@@ -1,8 +1,8 @@
 <div class="container">
-            <div *ngFor="let item of tweets"  class="row">
-              {{item.text}}
-                <div class="tweet" style="width: 20%" (click)="navigate(item.id)">
-                    <div class="our-team">
+ 
+      <div *ngFor="let item of tweets"  class="row">
+            <div class="tweet" style="width: 20%" (click)="navigate(item.id)">
+                 <div class="our-team">
                         <div class="picture">
                             <img class="img-fluid" src="https://picsum.photos/130/130?image=839">
                         </div>
@@ -13,7 +13,7 @@
                         <ul class="social">
                             <li><a href="#" ></a></li>
                         </ul>
-                    </div>
-                </div>
+                  </div>
             </div>
+      </div>
 </div>

@@ -15,11 +15,10 @@ tweets : any;
   }
 
   ngOnInit() {
-   this.tweets  = [] ;
-   let t = new Tweet("122121","fgfg fgfg fgfg fgfg"); 
-   this.tweets.push(t);
-    this.tweets.push(new Tweet("14545","fgfg fgfg fgfg sdsfg"));
-    this.tweets.push(new Tweet("98978847","fgfg fgfg jlkjh sdsfg"));
+   this.tweets  = [
+     {id : "121212", text : "jhjx sdggdshsgd gsdhgsqhdg"},
+   {id:"1212121",text : "121212121 qsqqs qsqsq"}
+   ] ;  
    // this.getAllPosts(); 
   }
   getAllPosts() {
@@ -30,7 +29,7 @@ tweets : any;
   }
   navigate ( id){
     console.log(id);
-    this.router.navigateByUrl('/tweet/12112');
+    this.router.navigateByUrl('/tweet/'+id);
   }
 
 }

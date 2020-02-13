@@ -8,9 +8,15 @@ import { retry, catchError } from 'rxjs/operators';
   providedIn : 'root'
 })
 export class ApiService {
+  tweets : any;
 base_path= 'https://route1d6e5udv-dzwibo-che.8a09.starter-us-east-2.openshiftapps.com';
 
-  constructor(private http :HttpClient) { }
+  constructor(private http :HttpClient) {
+     this.tweets  = [
+     {id : "121212", text : "jhjx sdggdshsgd gsdhgsqhdg"},
+   {id:"1212121",text : "121212121 qsqqs qsqsq"}
+   ] ;  
+   }
 
   // Http Options
   httpOptions = {
