@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Tweet } from '../models/tweet';
 
 @Component({
   selector: 'app-list-tweets',
@@ -6,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-tweets.component.css']
 })
 export class ListTweetsComponent implements OnInit {
-
+tweets : any; 
   constructor() { }
 
   ngOnInit() {
+   this.tweets  = [] ;
+   let t = new Tweet("122121","fgfg fgfg fgfg fgfg"); 
+   this.tweets.push(t)
   }
 
 }
