@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Tweet } from '../model/tweet';
+import { Tweet } from '../models/tweet';
 @Component({
   selector: 'app-tweet-detail',
   templateUrl: './tweet-detail.component.html',
