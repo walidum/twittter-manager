@@ -8,14 +8,14 @@ import { retry, catchError } from 'rxjs/operators';
   providedIn : 'root'
 })
 export class ApiService {
-base_path= 'http://localhost:8080/all';
+base_path= 'https://route1d6e5udv-dzwibo-che.8a09.starter-us-east-2.openshiftapps.com';
 
   constructor(private http :HttpClient) { }
 
   // Http Options
   httpOptions = {
     headers: new HttpHeaders({
-      'Content-Type': 'application/json'
+'Content-Type': 'application/x-www-form-urlencoded'
     })
   }
     // Handle API errors
@@ -36,8 +36,8 @@ base_path= 'http://localhost:8080/all';
   };
 
 
-  listTweets():Observable<Tweet> {
-    return this.http.get<Tweet>(this.base_path)
+  listTweets():Observable<any> {
+    return this.http.get(this.base_path)
     .pipe(
       retry(2),
       catchError(this.handleError)

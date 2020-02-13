@@ -9,8 +9,8 @@
 }
 
 .tweet {
-max-width: 300px; 
-  display: flex;
+ max-width: 300px;
+  float: left;
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
@@ -71,9 +71,6 @@ max-width: 300px;
   transform: scale(1);
   transition: all 0.9s ease 0s;
 }
-.name {
-  
-}
 .our-team:hover .picture img {
   box-shadow: 0 0 0 14px #f7f5ec;
   transform: scale(0.7);
@@ -113,8 +110,4 @@ max-width: 300px;
   transition: all 0.3s ease 0s;
   text-decoration: none;
 }
-
-.our-team .social li a:hover {
-  color: #1369ce;
-  background-color: #f7f5ec;
-}
+ 

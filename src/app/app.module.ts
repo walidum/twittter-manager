@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
 
 
 import { RouterModule } from '@angular/router';
@@ -12,7 +13,7 @@ import { HelloComponent } from './hello.component';
 import { ApiService } from './services/api.service';
   
 @NgModule({
-  imports:      [BrowserModule, RouterModule,FormsModule, AppRoutingModule],
+  imports:      [HttpClientModule,BrowserModule, RouterModule,FormsModule, AppRoutingModule],
   declarations: [ AppComponent, HelloComponent,  SearchBarComponent ,routingCompnents],
   bootstrap:    [ AppComponent ],
   providers: [ApiService]
