@@ -1,5 +1,8 @@
 <div class="container">
- 
+			<div class="search" style="display:flex; align-items: right;">  
+             <input type="text" placeholder="Search.." name="search2">
+            <button type="submit"  > Chercher</button>		
+  	   </div> 
       <div *ngFor="let item of tweets"  class="row">
             <div class="tweet" style="width: 20%" (click)="navigate(item.id)">
                  <div class="our-team">
