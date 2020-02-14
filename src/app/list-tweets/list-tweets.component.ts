@@ -10,8 +10,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ListTweetsComponent implements OnInit {
 tweets : any; 
+hashtag : string;
   constructor( public  api: ApiService,public router: Router) { 
     this.tweets  = [] ;
+    this.hashtag = "";
   }
 
   ngOnInit() {
@@ -30,6 +32,11 @@ tweets : any;
   navigate ( id){
     console.log(id);
     this.router.navigateByUrl('/tweet/'+id);
+  }
+  search(){
+    console.log(this.hashtag);
+    this.tweets =  [];
+    this.hashtag="";
   }
 
 }
