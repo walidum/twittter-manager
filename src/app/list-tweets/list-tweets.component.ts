@@ -21,11 +21,11 @@ hashtag : string;
      {id : "121212", text : "jhjx sdggdshsgd gsdhgsqhdg"},
    {id:"1212121",text : "121212121 qsqqs qsqsq"}
    ] ;  
-   // this.getAllPosts(); 
+   this.getAllPosts(); 
   }
   getAllPosts() {
     //Get saved list of students
-    this.api.listTweets().subscribe(response => {
+    this.api.search("spring").subscribe(response => {
       console.log(response); 
     })
   }
